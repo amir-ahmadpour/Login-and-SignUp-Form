@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Nazanin";
+    src: url("../fonts/Nazanin.eot") format("eot"),
+    url("../fonts/Nazanin.ttf") format("ttf"),
+    url("../fonts/Nazanin.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nazanin,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/*------ Modal Styling ------*/
+.modal-title{
+    font-family: Nazanin,sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+
+}
+.modal-bg {
+    background-image: url("../images/bg-modal 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-bg-content {
+    background-color: rgb(236, 240, 243) !important;
+    box-shadow: rgb(203, 206, 209) 13px 13px 20px, rgb(255, 255, 255) -13px -13px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    background-color: chocolate;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.button-forms{
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    background-color: #f8d7da;
+    box-shadow: rgb(177 177 177) 3px 3px 8px, rgb(255 255 255) -3px -3px 8px;
+}
+.button-forms button{
+    padding: 20px 0;
+    border: none;
+    outline: none;
+
+}
+.login-btn{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.sign-up-btn{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.login-form , .sign-up-form{
+    box-shadow: rgb(203, 206, 209) 13px 13px 20px, rgb(255, 255, 255) -13px -13px 20px;
+    border-radius: 50px;
+}
+
+
+/*---------- Style Login And Sign Up Form ----------*/
+
+input[type="text"],input[type="password"],input[type='submit'],input[type="email"]{
+    width: 80%;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: right;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+    padding: 20px 10px 20px 5px;
+    pointer-events: none;
+}
+svg{
+    height: 22px;
+}
+.filed{
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: rgb(203 206 209) 8px 8px 8px inset, rgb(255 255 255) -8px -8px 8px inset;
+}
+
+input[type="submit"]{
+    width: 100% !important;
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(2, 200, 219);
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(177 177 177) 3px 3px 8px, rgb(255 255 255) -3px -3px 8px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(80, 229, 185);
+}
+
+.label-form {
+    position: absolute;
+    right:25%;
+    transform: translate(0px, 15px) ;
+}
+input:focus + .label-form,
+input:valid + .label-form{
+    transform: translate(0px,-33px);
+    transition: 0.4s ease-in;
+    font-size: 25px !important;
+    color: #1DA1F2;
+}
+
+
+.checkbox-input{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: "IranNastaliq","Nazanin",sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.forget-password a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: Nazanin,sans-serif;
+}
